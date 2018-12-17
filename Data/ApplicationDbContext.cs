@@ -15,6 +15,7 @@ namespace ElectricityBilling.Data
         {
         }
 
+        public DbSet<Customer> Customers {get; set;}
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
