@@ -1,7 +1,6 @@
 namespace ElectricityBilling.Models{
 
     public class Customer{
-        public int id { get; set; }
         public int customer_id{get; set;}
         public string sc_no { get; set; }
         public string customer_name { get; set; }
