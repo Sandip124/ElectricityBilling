@@ -27,7 +27,7 @@ namespace ElectricityBilling
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseMySql("Server=localhost;port=3300;database=electricity;user=root;password=Pankaj12345"));
+               options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
