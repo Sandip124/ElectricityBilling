@@ -1,0 +1,37 @@
+@Model List<Customer>
+    <h1>All Customers</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>CUSTOMER ID</th>
+            <th>SC NO.</th>
+            <th>NAME</th>
+            <th>ADDRESS</th>
+            <th>CONTACT</th>
+            <th>COUNTER</th>
+            <th>METER NO.</th>
+            <th>PHASE</th>
+            <th>LOAD</th>
+            <th>INITIAL RDG</th>
+            <th>ACTION</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+        <tr>
+            <td>@customer.customer_id</td>
+            <td>@customer.sc_no</td>
+            <td>@customer.customer_name</td>
+            <td>@customer.customer_address</td>
+            <td>@customer.customer_contact</td>
+            <td>@customer.counter_name</td>
+            <td>@customer.meter_no</td>
+            <td>@customer.phase</td>
+            <td>@customer.load</td>
+            <td>@customer.initial_meter_reading</td>
+        </tr>
+        }
+    </tbody>
+</table>
