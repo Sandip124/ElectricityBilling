@@ -1,0 +1,51 @@
+@model Customer
+
+<form asp-action="New" asp-controller = "Customer" method = "Post">
+    <div class = "form-group">
+        <label asp-for="customer_id">Customer Id</label>
+        <input asp-for="customer_id" class="form-control"/>
+    </div>
+    <div class = "form-group">
+        <label asp-for="sc_no">SC NO</label>
+        <input asp-for="sc_no" class="form-control"/>
+    </div>
+    <div class = "form-group">
+        <label asp-for="customer_name">Customer Name</label>
+        <input asp-for="customer_name" class="form-control"/>
+    </div>
+    <div class = "form-group">
+        <label asp-for="customer_address">Customer Address</label>
+        <input asp-for="customer_address" class="form-control"/>
+    </div>
+    <div class = "form-group">
+        <label asp-for="customer_contact">Customer Contact</label>
+        <input asp-for="customer_contact" class="form-control"/>
+    </div>
+    <div class = "form-group">
+        <label asp-for="counter_name">Counter Name</label>
+        <input asp-for="counter_name" class="form-control"/>
+    </div>
+    <div class = "form-group">
+        <label asp-for="meter_no">Meter No.</label>
+        <input asp-for="meter_no" class="form-control"/>
+    </div>
+    <div class = "form-group">
+        <label asp-for="phase">Phase</label>
+        <input asp-for="phase" class="form-control"/>
+    </div>
+    <div class = "form-group">
+        <label asp-for="load">Load</label>
+        <input asp-for="load" class="form-control"/>
+    </div>
+    <div class = "form-group">
+        <label asp-for="due_amount">Due Amount</label>
+        <input asp-for="due_amount" class="form-control"/>
+    </div>
+    <div class = "form-group">
+        <label asp-for="initial_meter_reading">Initial RDG</label>
+        <input asp-for="initial_meter_reading" class="form-control"/>
+    </div>
+    <div class = "form-group">
+        <input type="submit" value="Save Customer" class="btn btn-success"/>
+    </div>
+</form>

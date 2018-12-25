@@ -36,7 +36,7 @@ namespace ElectricityBilling.Repository{
 
         public Customer GetSingleCustomer(int id)
         {
-            var customer = _context.Customers.FirstOrDefault(p=>p.customer_id == id);
+            var customer = _context.Customers.FirstOrDefault(p=>p.Id == id);
             return customer;
         }
     }
