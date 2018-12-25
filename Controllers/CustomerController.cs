@@ -29,7 +29,7 @@ namespace ElectricityBilling.Controllers{
         [HttpPost]
         public IActionResult New(Models.Customer customer){
             _customerRepository.Create(customer);
-            return View();
+            return RedirectToAction("Index");
         }
         public IActionResult Delete(int id){
             var customer = _customerRepository.GetSingleCustomer(id);
