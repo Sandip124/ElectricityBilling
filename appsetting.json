@@ -1,0 +1,6 @@
+
+{
+    "connectingstrings": {
+        "DefaultConnection": "Server=localhost;port=3306;database=electricity;user=root;",
+    }
+}
